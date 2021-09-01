@@ -1,0 +1,99 @@
+:root{
+   --color-darkblue:#1b1b32;
+   --color-white: #ffffff;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:var(--color-darkblue) ;
+    background-image: url(/image/img1.jpg);
+    margin: 0%;
+    font-family: Roboto,sanserif;
+   
+    font-size: 1.25rem;
+
+}
+
+header{
+    
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.bodywrapper{
+    background-color: cornflowerblue;
+    /* display: grid; */
+    display: flexbox;
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px;
+    
+}
+@media screen and (max-width:700px) {
+    .bodywrapper{
+        background-color: lightblue;
+        width: 95%;
+    }
+    h1{
+        color: black;
+    }
+    
+}
+.formelement{
+    margin: 5px;
+    line-height: 1.5em;
+}
+label{
+    display: block;
+}
+
+input[type="text"],select,input[type="submit"]{
+    width: 90%;
+    height: 38px;
+
+    /* box-shadow: grey; */
+}
+input,option,select,textarea{
+    border-radius: 5px;
+    border: none;
+}
+.formelement:focus{
+    border-color:var(--color-darkblue);
+    color: darkgreen;
+    
+}
+textarea{
+    width: 90%;
+    height: 150px;
+}
+#radiobtn label{
+    margin: 10px;
+    
+}
+#radiobtn input{
+   width: 30px;
+    height: 15px;
+    
+}
+#checkbtn input{
+    width: 30px;
+    height: 15px;
+    
+}
+#checkbtn label{
+    margin: 10px;
+    
+    
+}
+input[type="submit"]:hover{
+    background-color: var(--color-darkblue);
+    color: var(--color-white);
+}
+
+
+
